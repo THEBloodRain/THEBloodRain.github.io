@@ -5,10 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="H—逃离迷宫, Hexo">
-    <meta name="description" content="题解人：程保平
-题目链接：(https://vjudge.ppsucxtt.cn/contest/450760#problem/H)
+    <meta name="description" content="题目链接：(https://vjudge.ppsucxtt.cn/contest/450760#problem/H)
 时间复杂度：
-题目思路：题目要求在不超过k次转弯的情况下找到出口，所以我们要找转弯次数尽可能少的点，写个优">
+题目思路：题目要求在不超过k次转弯的情况下找到出口，所以我们要找转弯次数尽可能少的点，写个优先队列，之后用B">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -399,8 +398,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>题解人</strong>：程保平</p>
-<p><strong>题目链接</strong>：(<a target="_blank" rel="noopener" href="https://vjudge.ppsucxtt.cn/contest/450760#problem/H">https://vjudge.ppsucxtt.cn/contest/450760#problem/H</a>)</p>
+                <p><strong>题目链接</strong>：(<a target="_blank" rel="noopener" href="https://vjudge.ppsucxtt.cn/contest/450760#problem/H">https://vjudge.ppsucxtt.cn/contest/450760#problem/H</a>)</p>
 <p><strong>时间复杂度</strong>：</p>
 <p><strong>题目思路</strong>：题目要求在不超过k次转弯的情况下找到出口，所以我们要找转弯次数尽可能少的点，写个优先队列，之后用BFS从起点开始去遍历，不过在改变位置的时候把if改成while为了把某一方向上连续的满足条件的点都存在优先队列里，这些点的转弯次数肯定都是较少的，再通过优先队列，这样就可以保证我们第一次遇到出口的时候点的转弯的次数是最少的，如果满足转弯次数小于等于K就return 1 反之return 0; （注意x和y谁是行列的情况）</p>
 <p>如果想用DFS写这道题可以去CSDN上找[HDU - 1728]</p>
